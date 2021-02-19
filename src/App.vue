@@ -12,13 +12,15 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-
+import utils from './assets/script/utils';
 export default {
     name: "App",
     components: {
         HelloWorld,
     },
     created: function () {
+        console.info("uuid", utils.uuid());
+        console.info("parseDate", utils.getDate('yyyy-MM-dd hh:mm:ss', 'm', -1));
     },
 };
 </script>
