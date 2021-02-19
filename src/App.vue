@@ -8,6 +8,12 @@
     <router-link to="/home">home</router-link>
     <router-link to="/login">login</router-link>
     <router-view></router-view>
+
+    <van-button icon="plus" type="primary" />
+    <van-button icon="plus" type="primary">按钮</van-button>
+    <van-button icon="https://img01.yzcdn.cn/vant/user-active.png" type="info">
+    按钮
+    </van-button>
 </template>
 
 <script>
