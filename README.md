@@ -1,7 +1,8 @@
 # vue3-demo
 
 #### 介绍
-vue3+vite实例
+vue3+vite+loadash+axios实例
+
 
 #### 软件架构
 软件架构说明
@@ -9,29 +10,22 @@ vue3+vite实例
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  安装vue3最新稳定版 `npm install vue@next` [vue3中文文档地址](https://vue3js.cn/docs/zh/guide/introduction.html)
+2.  安装vue3最新命令行工具`npm install -g @vue/cli@next`
+3.  安装less `npm install --save-dev less less-loader`
+4.  安装sass `npm install --save-dev sass sass-loader`
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+> 注: .env.[mode]文件无法修改文件路径
 
-#### 参与贡献
+1、打包：
+    `npm run build` 使用生产url配置 debug=false
+    `npm run build-dev` 使用开发url配置 debug=true
+    `npm run build-test` 使用测试url配置 debug=true
+    `npm run build-prod` 使用生产url配置 debug=true
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+ 2、调试：
+    `npm run dev` 使用开发url配置 debug=true
+    `npm run test` 使用测试url配置 debug=true
+    `npm run prod` 使用生产url配置 debug=true

@@ -2,6 +2,12 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Hello Vue 3.0 + Vite" />
     <div class="main">main</div>
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-link to="/">/**</router-link>
+    <router-link to="/home">home</router-link>
+    <router-link to="/login">login</router-link>
+    <router-view></router-view>
 </template>
 
 <script>
@@ -13,9 +19,6 @@ export default {
         HelloWorld,
     },
     created: function () {
-        //   {"BASE_URL":"/","MODE":"development","DEV":true,"PROD":false}
-        console.info(JSON.stringify(import.meta.env.VITE_APP_TITLE));
-        console.info(JSON.stringify(process.env.VITE_APP_TITLE));
     },
 };
 </script>
