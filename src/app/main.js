@@ -1,0 +1,15 @@
+import { createApp } from 'vue'
+import App from './App.vue'
+import '../assets/style/index.less'
+import http from '../http'
+import router from '../router'
+
+import Vant from 'vant'
+import 'vant/lib/index.css'
+
+const app = createApp(App)
+// app.use(router)
+app.use(Vant)
+app.use(http)
+
+app.mount('#app')

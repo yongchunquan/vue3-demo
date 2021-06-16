@@ -3,12 +3,6 @@ import vue from '@vitejs/plugin-vue'
 const { resolve } = require('path')
 import { viteExt } from 'apite';
 
-console.log(`Current directory: ${process.cwd()}`);
-// 打印 process.argv
-process.argv.forEach((val, index) => {
-    console.log(`process.argv->>>${index}: ${val}`);
-});
-
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [vue()],
@@ -39,14 +33,5 @@ export default defineConfig({
         // 请求地址前辍， 命令行模式默认为空，插件默认为 '/api'
         // prefix: '',
     })],
-    build: {
-        rollupOptions: {
-            // 多页面配置
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                nested: resolve(__dirname, 'nested/index.html')
-            }
-        }
-    },
-    // root: './nested', // 指定入口文件目录
+    root: './src/app', // 指定入口文件目录
 })

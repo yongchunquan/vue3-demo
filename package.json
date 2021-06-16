@@ -1,17 +1,27 @@
 {
-  "name": "vue3-app",
+  "name": "vue3-demo",
   "version": "0.0.0",
   "scripts": {
+    "dev:app": "vite --config configs/app.config.js --mode dev",
+    "build:app": "vite build --config configs/app.config.js --mode prod",
+    "serve:app": "vite preview --config configs/app.config.js",
+
+    "dev:web": "vite --config web.config.js --mode dev",
+    "build:web": "vite build --config web.config.js --mode prod",
+    "serve:web": "vite preview --config web.config.js",
+
     "dev": "vite --mode dev",
     "test": "vite --mode test",
     "prod": "vite --mode prod",
     "build": "vite build --mode prod",
     "build-dev": "vite build --mode dev",
     "build-test": "vite build --mode test",
-    "build-prod": "vite build --mode debug"
+    "build-prod": "vite build --mode debug",
+    "serve": "vite preview"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "element-plus": "*",
     "lodash": "^4.17.20",
     "uuidjs": "^4.2.8",
     "vant": "^3.0.6",
