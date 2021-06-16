@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+const { resolve } = require('path')
 import { viteExt } from 'apite';
 
 // https://vitejs.dev/config/
@@ -30,5 +31,13 @@ export default defineConfig({
         dir: 'mock',
         // 请求地址前辍， 命令行模式默认为空，插件默认为 '/api'
         // prefix: '',
-    })]
+    })],
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                nested: resolve(__dirname, 'nested/index.html')
+            }
+        }
+    }
 })
