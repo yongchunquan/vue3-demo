@@ -14,7 +14,7 @@
 
 //   {"BASE_URL":"/","MODE":"development","DEV":true,"PROD":false}
 console.info(JSON.stringify(import.meta.env));
-console.info(JSON.stringify(process.env));
+// console.info(JSON.stringify(process.env));
 
 var env = import.meta.env;
 let debug = env.VITE_DEBUG && env.VITE_DEBUG == 'true';

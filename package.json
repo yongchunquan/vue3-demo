@@ -18,12 +18,13 @@
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.4",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.1.1",
     "apite": "^1.2.0",
     "less": "^4.1.1",
     "less-loader": "^8.0.0",
     "sass": "^1.32.7",
     "sass-loader": "^11.0.1",
-    "vite": "^1.0.0-rc.13"
+    "vite": "^2.3.7"
   }
 }

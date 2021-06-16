@@ -13,6 +13,9 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import utils from './assets/script/utils';
+import config from './assets/script/config';
+console.info("config", config);
+
 export default {
     name: "App",
     components: {

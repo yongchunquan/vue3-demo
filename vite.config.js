@@ -1,6 +1,11 @@
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 import { viteExt } from 'apite';
 
-export default {
+// https://vitejs.dev/config/
+export default defineConfig({
+    plugins: [vue()],
+    envDir: './configs',
     server: {
         proxy: {
             // string shorthand
@@ -25,5 +30,5 @@ export default {
         dir: 'mock',
         // 请求地址前辍， 命令行模式默认为空，插件默认为 '/api'
         // prefix: '',
-     })]
-}
+    })]
+})
